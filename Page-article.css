@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20vw;
+    gap: 20px;
+    list-style: none;
+}
+
+header {
+    background-color: black;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10vw;
+}
+
+.search_box {
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    margin-left: 20vw;
+    color: white;
+    padding-left: 10px;
+}
+
+.search_box::placeholder {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: end;
+}
+
+p {
+    color: white;
+}
+
+.Principal {
+    display: flex;
+    gap: 30px;
+    padding: 0 3vw;
+}
+
+.left {
+    order: -1;
+    width: 50vw;
+}
+
+.prix {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prix p {
+    text-align: start;
+}
+
+.nbr-article {
+    width: 80px;
+    height: 39px;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.Pay {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.pay-card {
+    height: 45px;
+    border-color: black;
+    width: 250px;
+    border: solid white;
+}
+
+.pay-card:hover {
+    opacity: 0.8;
+}
+
+.pay-card span {
+    padding-left: 25px;
+}
+
+.SMLXL {
+    display: flex;
+    flex-direction: row;  
+    gap: 20px; 
+    padding-top: 5px;
+}
+
+.cube {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    gap: 30px;
+}
+
+.image-article {
+    max-width: 100%;
+    width: 650px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+.article{
+    max-width: 100%;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article img {
+    width: 20%; 
+    height: auto;
+
+}
+
+
+
+
+
+
+.SMLXL img {
+    width: 100%;
+    max-width: 50px; 
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .Principal {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .SMLXL {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .prix {
+        max-width: 100%; 
+    }
+
+    .nbr-article {
+        width: 50px; 
+    }
+
+    .pay-card {
+        width: 100%; 
+    }
+}
